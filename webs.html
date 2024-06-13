@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPA! Creativos</title>
+    <link rel="stylesheet" href="./front/styles/0reset.css">
+    <link rel="stylesheet" href="./front/styles/0style.css">
+    <link rel="stylesheet" href="./front/styles/bar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo_mb"><img src="./front/assets/logos/epa-logo-sm.png" alt=""></li>
+                <li id="first_mb"><a href="./index.html">Invitaciones</a></li>
+                <li><a href="./bar.html">Menú de Bar</a></li>
+                <li><a href="./webs.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2><img src="./front/assets/logos/epa-logo-smc.png" alt="">Website</h2>
+            <h3>Soñalo, Contruilo, Webealo...A tu gusto. </h3>
+            <img id="introduction_mockup" src="../front/assets/img/mup1.png" alt="">
+
+        </div>
+        <div class="introduction" id="firstP">
+            <div id="scroll_direction">
+                <img src="./front/assets/img/left_scroll.png" alt="">
+                <img src="./front/assets/img/up_scroll.png" alt="">
+            </div>
+            <p>El contenido del menú se personaliza con el logo, productos, precios y promociones del negocio<a href="#aclaration_1">1</a>.</p>
+        </div>
+
+        <div class="introduction" id="secondP">
+            <p>El contenido puede ser actualizado todas las veces que sea necesario<a href="#aclaration_2">2</a> para adaptarse a las actualizaciones de precios o promociones del local<a href="#aclaration_3">3</a>.</p>
+        </div>
+
+        <div class="introduction" id="thirdP">
+            <p>El costo de del menú parte desde los <b>USD 40,00</b> o el equivalente en ARS según la cotización del Dólar Blue del dia.</p>
+        </div>
+
+        <div class="introduction" id="fourthP">
+            <p>Puede acordarse un modelo <b>mensual</b> de mantenimiento o un modelo <b>on demand</b> para realizar el mantenimiento y actualización de la plataforma<a href="#aclaration_4">4</a>.</p>
+        </div>
+
+            <span id="aclaration_1"><b>1</b>La imágen de la interfaz de la carta para bares y restaurantes es a modo ilustrativo. El resultado final del diseño de la interfaz resulta de las necesidades del cliente o local.</span>
+            <span id="aclaration_2"><b>2</b>Toda personalización o adaptación no contemplada en la estructura modelo se cotiza como un extra.</span>
+            <span id="aclaration_3"><b>3</b>La estructura base contempla, en su precio base, el cambio de textos, colores e imágenes ilustrativas del producto y el negocio</span>
+            <span id="aclaration_4"><b>4</b>El modelo "mensual" se abona todos los meses e incluye las actualizaciones y mejoras de la plataforma al mismo tiempo que las modificaciones que se deseen realizar por variaciones de precios, promociones o de productos. La modalidad "on demand" incluye sólo el mantenimiento de la plataforma para su correcto funcionamiento y todas las modificaciones se cotizan individualmente.</span>
+
+            <button class="toForm_button" href="#form">Solicitar</button>
+        </section>
+
+        <section id="models">
+            <h2>Acceso</h2>
+            <h3>En el momento que se sienta tu cliente.</h3>
+            <div id="models_cards_container"></div>
+            <div id="models_names_container">
+                <p id="nameLeft"></p>
+                <p id="nameCenter"></p>
+                <p id="nameRight"></p>
+            </div>
+
+            <div id="models_dots"></div>
+            <button id="models_animation_button">Animar</button>
+        </section>
+
+        <section id="events">
+            <h2>Extras</h2>
+            <h3>Vayamos aún más allá. </h3>
+            <div id="events_cards_container"></div>
+        </section>
+
+
+
+        <section id="examples">
+            <h2>Ejemplo</h2>
+            <h3>Veamos cómo queda.</h3>
+            <div id="iframe_container">
+                <iframe id="example_iframe" src="" frameborder="0" title="existing invitations"></iframe>
+            </div>
+            <div id="examples_selector"></div>
+        </section>
+
+        <form id="form">
+            <h2>Solicitud</h2>
+            <h3>Encargá tu menú, completando los siguientes datos:</h3>
+
+            <label for="events">Tipo de Negocio</label>
+            <select title="events" name="events" id="event_selection">
+                <option value="">Seleccioná el tipo de negocio</option>
+            </select>
+<!--
+            <label for="models">Modelo</label>
+            <select title="models" name="models" id="model_selection">
+                <option value="">Seleccioná el modelo de diseño</option>
+            </select> -->
+
+            <label for="name">Datos del Contacto</label>
+            <input type="text" name="name" id="client_name" placeholder="Nombre del Negocio">
+            <input type="text" name="name" id="contact_name" placeholder="Nombre del Contacto">
+            <input type="text" name="lastname" id="contact_lastname" placeholder="Apellido del Contacto">
+
+            <label for="phone">Whatsapp</label>
+            <div>
+                <select title="country" name="country" id="country">
+                    <option id="AR" value="+54">🇦🇷 AR +54</option>
+                    <option id="BO" value="+591">🇧🇴 BO +591</option>
+                    <option id="BR" value="+55">🇧🇷 BR +55</option>
+                    <option id="CL" value="+56">🇨🇱 CL +56</option>
+                    <option id="ES" value="+34">🇪🇸 ES +34</option>
+                    <option id="MX" value="+52">🇲🇽 MX +52</option>
+                    <option id="PY" value="+595">🇵🇾 PY +595</option>
+                    <option id="PE" value="+51">🇵🇪 PE +51</option>
+                    <option id="UY" value="+598">🇺🇾 UY +598</option>
+                    <option id="US" value="+1">🇺🇸 US +1</option>
+                </select>
+                <input type="tel" name="phone" id="phone" placeholder="3816376266">
+            </div>
+
+            <p>El formato del teléfono debe ser la caracteristica sin el 0, seguido del número sin el 15</p>
+
+            <!-- <label for="date_start">Fecha Incio del Evento</label>
+            <input title="date-init" type="datetime-local" id="date_start" name="date_start">
+
+            <label for="date-start">Fecha Finalización del Evento</label>
+            <input title="date-end" type="datetime-local" id="date_end" name="date_finish">
+            <p>Indicá las fechas y horarios de la manera más precisa posible</p> -->
+
+            <p id="error_message"></p>
+
+            <button id="submit" type="submit">Enviar</button>
+
+            <video id="form_bkg_slayer" autoplay loop muted playsinline>
+                <source src="./front/assets/vid/fluidbkg.mp4" type="video/mp4">
+            </video>
+        </form>
+    </main>
+
+    <footer>
+        <img src="../front/assets/ico/epa_footer.png" alt="">
+        <p>Epa! Creativos Todos los derechos reservados</p>
+        <p>381-6376266</p>
+        <img src="../front/assets/ico/wpp.png" alt="">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./front/scripts/scrollFunctions.js"></script>
+    <script type="module" src="./front/scripts/bar.js"></script>
+</body>
+</html>
