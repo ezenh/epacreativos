@@ -1,0 +1,20 @@
+:root {
+    --greyBG: rgb();
+    --yellow: rgb();
+    --bone: rgb();
+    --greyItem: rgb();
+    --quitItem: rgb()
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en Safari */
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
