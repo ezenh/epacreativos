@@ -221,9 +221,9 @@ form.addEventListener('submit', async function(event){
     let serverURL;
 
     if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    serverUrl = 'http://localhost:3000/invitations/';
+        serverURL = 'http://localhost:3000/invitations/';
     } else {
-    serverUrl = 'https://epacreativos.netlify.app/invitations/';
+        serverURL = 'https://epacreativos.netlify.app/invitations/';
     }
 
     try {
