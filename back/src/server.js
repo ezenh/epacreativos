@@ -11,8 +11,11 @@ const app = express()
 app.use(morgan("dev"))
 
 // Middleware para permitir CORS
-app.use(cors())
-
+app.use(cors({
+    origin: '*',  // Permite solicitudes desde cualquier origen
+    methods: 'GET,POST,PUT,DELETE',  // Métodos HTTP permitidos
+    allowedHeaders: 'Content-Type,Authorization'  // Encabezados permitidos
+  }));
 // Middleware para analizar solicitudes JSON
 app.use(express.json())
 
