@@ -226,11 +226,11 @@ form.addEventListener('submit', async function(event){
     let serverURL;
     serverURL = 'http://localhost:3000/invitations';
 
-    if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        serverURL = 'http://localhost:3000/invitations';
-    } else {
-        serverURL = 'https://epacreativos.netlify.app';
-    }
+    // if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    //     serverURL = 'http://localhost:3000/invitations';
+    // } else {
+    //     serverURL = 'https://epacreativos.netlify.app';
+    // }
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
