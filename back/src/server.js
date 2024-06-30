@@ -11,9 +11,8 @@ const app = express()
 app.use(morgan("dev"))
 
 // Middleware para permitir CORS
-app.use(cors({
-    origin: ['http://127.0.0.1:5500', 'https://epacreativos.netlify.app']  // Permite solicitudes desde estos orígenes
-}));
+app.use(cors())
+
 // Middleware para analizar solicitudes JSON
 app.use(express.json())
 

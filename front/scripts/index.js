@@ -2,6 +2,11 @@ import { models, events, examples } from "../scripts/invitationsArrays.js"
 import { createSliderItems, checkSliderItemPos, animateSliderItems } from "./scrollFunctions.js"
 import { checkFirstLogin } from "./firstlogin.js"
 
+// Verificar si estamos en la página index.html
+// if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+//     // Cambiar la URL a /invitations sin recargar la página
+//     window.history.pushState({}, '', '/invitations');
+// }
 
 document.getElementById('models_animation_button').addEventListener('click', (event) => {
     let centeredItemIndex = checkSliderItemPos(models_cards_container, models_dots)
@@ -221,15 +226,15 @@ form.addEventListener('submit', async function(event){
     let serverURL;
 
     if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        serverURL = 'http://localhost:3000/invitations/';
+        serverURL = 'http://localhost:3000/invitations';
     } else {
-        serverURL = 'https://epacreativos.netlify.app/invitations/';
+        serverURL = 'https://epacreativos.netlify.app/';
     }
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
         // SI TIENE EXITO...
-        const response = await axios.post('https://epacreativos.netlify.app/invitations/', datosJSON, {
+        const response = await axios.post(serverURL, datosJSON, {
             headers: {
                 'Content-Type': 'application/json'
             }
