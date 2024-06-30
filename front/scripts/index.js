@@ -224,11 +224,12 @@ form.addEventListener('submit', async function(event){
 
 // DETERMINAR LA URL DEL SERVIDOR
     let serverURL;
+    serverURL = 'http://localhost:3000/invitations';
 
     if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         serverURL = 'http://localhost:3000/invitations';
     } else {
-        serverURL = 'https://epacreativos.netlify.app/';
+        serverURL = 'https://epacreativos.netlify.app';
     }
 
     try {
