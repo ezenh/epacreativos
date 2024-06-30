@@ -2,11 +2,16 @@ import { models, events, examples } from "../scripts/invitationsArrays.js"
 import { createSliderItems, checkSliderItemPos, animateSliderItems } from "./scrollFunctions.js"
 import { checkFirstLogin } from "./firstlogin.js"
 
-// Verificar si estamos en la página index.html
-// if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-//     // Cambiar la URL a /invitations sin recargar la página
-//     window.history.pushState({}, '', '/invitations');
-// }
+function getOS() {
+    const userAgent = window.navigator.userAgent;
+    if (userAgent.indexOf('Win') !== -1) return 'Windows';
+    if (userAgent.indexOf('Mac') !== -1) return 'MacOS';
+    if (userAgent.indexOf('X11') !== -1) return 'UNIX';
+    if (userAgent.indexOf('Linux') !== -1) return 'Linux';
+    if (userAgent.indexOf('Android') !== -1) return 'Android';
+    if (userAgent.indexOf('like Mac') !== -1) return 'iOS';
+    return 'Unknown OS';
+    }
 
 document.getElementById('models_animation_button').addEventListener('click', (event) => {
     let centeredItemIndex = checkSliderItemPos(models_cards_container, models_dots)
@@ -223,14 +228,13 @@ form.addEventListener('submit', async function(event){
     let datosJSON = JSON.stringify(datos);
 
 // DETERMINAR LA URL DEL SERVIDOR
-    let serverURL;
-    serverURL = 'http://localhost:3000/invitations';
+    let iosURL = 'http://localhost:3000/invitations'
+    let androidURL = 'http://10.0.2.2/invitations';
+    let serverURL = getOS() === 'ios' ? iosURL : androidURL;
+    // serverURL = 'http://localhost:3000/invitations';
+    console.log('Sistema Operativo:', getOS());
 
-    // if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    //     serverURL = 'http://localhost:3000/invitations';
-    // } else {
-    //     serverURL = 'https://epacreativos.netlify.app';
-    // }
+
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
@@ -263,3 +267,4 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     });
 });
+console.log('Sistema Operativo:', getOS());
