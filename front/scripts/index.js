@@ -231,7 +231,7 @@ form.addEventListener('submit', async function(event){
         // SI HAY UN ERROR...
     } catch (error) {
             console.error('Error en la solicitud:', error);
-            alert('Ha ocurrido un error y la solicitud no se ha podido enviar correctamente. Por favor comunicarse por whatsapp y solicitar el servicio por chat.')
+            alert(error + 'Ha ocurrido un error y la solicitud no se ha podido enviar correctamente. Por favor comunicarse por whatsapp y solicitar el servicio por chat.')
 
         }
     });
