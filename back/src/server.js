@@ -12,10 +12,8 @@ app.use(morgan("dev"))
 
 // Middleware para permitir CORS
 app.use(cors({
-    origin: '*',  // Permite solicitudes desde cualquier origen
-    methods: 'GET,POST,PUT,DELETE',  // Métodos HTTP permitidos
-    allowedHeaders: 'Content-Type,Authorization'  // Encabezados permitidos
-  }));
+    origin: ['http://127.0.0.1:5500', 'https://epacreativos.netlify.app']  // Permite solicitudes desde estos orígenes
+}));
 // Middleware para analizar solicitudes JSON
 app.use(express.json())
 

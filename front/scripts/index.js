@@ -217,10 +217,19 @@ form.addEventListener('submit', async function(event){
 // CONVIERTO LOS DATOS A JSON
     let datosJSON = JSON.stringify(datos);
 
+// DETERMINAR LA URL DEL SERVIDOR
+    let serverURL;
+
+    if(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    serverUrl = 'http://localhost:3000/invitations/';
+    } else {
+    serverUrl = 'https://epacreativos.netlify.app/invitations/';
+    }
+
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
-            // SI TIENE EXITO...
-        const response = await axios.post('http://localhost:3000/invitations/', datosJSON, {
+        // SI TIENE EXITO...
+        const response = await axios.post('https://epacreativos.netlify.app/invitations/', datosJSON, {
             headers: {
                 'Content-Type': 'application/json'
             }
