@@ -12,7 +12,7 @@ app.use(morgan("dev"))
 
 // Middleware para permitir CORS
 app.use(cors({
-    origin: '*', // Permite todas las solicitudes de origen
+    origin: 'https://epacreativos.vercel.app', // Asegúrate de poner la URL de tu frontend
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));

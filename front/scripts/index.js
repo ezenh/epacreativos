@@ -228,13 +228,8 @@ form.addEventListener('submit', async function(event){
     let datosJSON = JSON.stringify(datos);
 
 // DETERMINAR LA URL DEL SERVIDOR
-    let iosURL = 'http://localhost:3000/invitations'
-    let androidURL = 'https://epacreativos-57105p7p6-ezequiels-projects-b2dd7b9e.vercel.app/invitations';
-    let serverURL = getOS() === 'ios' ? iosURL : androidURL;
-    // serverURL = 'http://localhost:3000/invitations';
-    console.log('Sistema Operativo:', getOS());
-
-
+    // Usar la URL del servidor desplegado en Vercel
+    const serverURL = 'https://epacreativos-57105p7p6-ezequiels-projects-b2dd7b9e.vercel.app/invitations';
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
