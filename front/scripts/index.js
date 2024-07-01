@@ -229,7 +229,7 @@ form.addEventListener('submit', async function(event){
 
 // DETERMINAR LA URL DEL SERVIDOR
     // Usar la URL del servidor desplegado en Vercel
-    const serverURL = 'https://epacreativos-57105p7p6-ezequiels-projects-b2dd7b9e.vercel.app/invitations';
+    const serverURL = 'https://epacreativos.vercel.app/invitations';
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
