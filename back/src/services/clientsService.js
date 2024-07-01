@@ -1,4 +1,4 @@
-const InvitationsClient = require("../models/InvitationsClient");
+const InvitationsClient = require("../models/invitation");
 const RestaurantsClient = require("../models/RestaurantsClient");
 const WebsClient = require("../models/WebsClient");
 
