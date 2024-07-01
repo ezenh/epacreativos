@@ -130,7 +130,7 @@ export function checkSliderItemPos(container, dotsContainer) {
         }) 
     }
     animateSliderItems(container, centeredItemIndex)
-    console.log(centeredItemIndex)
+    // console.log(centeredItemIndex)
     return centeredItemIndex
     }
 

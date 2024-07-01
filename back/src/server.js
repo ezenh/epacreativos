@@ -12,7 +12,7 @@ app.use(morgan("dev"));
 
 // Middleware para permitir CORS
 app.use(cors({
-    origin: '*', // Asegúrate de poner la URL de tu frontend
+    origin: '*', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

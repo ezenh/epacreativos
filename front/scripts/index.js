@@ -13,22 +13,26 @@ function getOS() {
     return 'Unknown OS';
     }
 
-let serverURL;
+// let serverURL;
 console.log(window.location.hostname)
-//CHECKEA LA URL DEL PROYECTO => localhost o web
-if (window.location.hostname === 'localhost') {
-    serverURL = 'http://localhost:3000/invitations/';
-} else {
-    serverURL = 'https://epacreativos.vercel.app/invitations/';
-    serverURL = 'http://localhost:3000/invitations/'
-    // serverURL = 'https://epacreativos.vercel.app:3000/invitations/'
 
-}
-    
-    console.log(serverURL)
+//CHECKEA LA URL DEL PROYECTO => localhost o web
+// if (window.location.hostname === 'localhost') {
+//     serverURL = 'http://localhost:3000/invitations/';
+// } else {
+//     serverURL = 'https://epacreativos.vercel.app/invitations/';
+//     serverURL = 'http://localhost:3000/invitations/'
+// }
+
+const serverURL = window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:3000/invitations/'
+    : 'https://epacreativos.vercel.app/invitations/';
+
+console.log(serverURL)
+
 document.getElementById('models_animation_button').addEventListener('click', (event) => {
     let centeredItemIndex = checkSliderItemPos(models_cards_container, models_dots)
-    console.log(centeredItemIndex)
+    // console.log(centeredItemIndex)
     let card = models_cards_container.children[centeredItemIndex]
     let card_slider = card.children[1]
     let card_sliderTextPrincipal = card_slider.children[0]
@@ -265,7 +269,7 @@ form.addEventListener('submit', async function(event){
 // SOLICITAR PROTECCION DE DATOS SENSIBLES A IFRAMES ///////////////////////////////OK
 document.addEventListener('DOMContentLoaded', function() {
     checkFirstLogin();
-    console.log('todo cargado');
+    // console.log('todo cargado');
     example_iframe.addEventListener('load', () => {
         example_iframe.contentWindow.postMessage(
             { action: 'hideSensitiveInfo' },
@@ -273,4 +277,3 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     });
 });
-console.log('Sistema Operativo:', getOS());

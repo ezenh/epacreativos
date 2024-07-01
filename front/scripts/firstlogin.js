@@ -6,7 +6,7 @@ if (sessionStorage.getItem('firstLogin') === null) {
     firstLogin = sessionStorage.getItem('firstLogin') === 'true';
 }
 
-console.log(firstLogin);
+// console.log(firstLogin);
 
 export function checkFirstLogin() {
     if (firstLogin === true) {
@@ -27,9 +27,9 @@ export function checkFirstLogin() {
         sessionStorage.setItem('firstLogin', 'false');
     }
 
-    console.log(firstLogin);
+    // console.log(firstLogin);
 }
 
 setTimeout(() => {
-    console.log(firstLogin);
+    // console.log(firstLogin);
 }, 500);
