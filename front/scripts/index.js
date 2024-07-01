@@ -13,6 +13,16 @@ function getOS() {
     return 'Unknown OS';
     }
 
+let serverURL;
+console.log(window.location.hostname)
+//CHECKEA LA URL DEL PROYECTO => localhost o web
+if (window.location.hostname === 'localhost') {
+    serverURL = 'http://localhost:3000/invitations';
+} else {
+    serverURL = 'https://epacreativos.vercel.app/invitations';
+}
+    
+    console.log(serverURL)
 document.getElementById('models_animation_button').addEventListener('click', (event) => {
     let centeredItemIndex = checkSliderItemPos(models_cards_container, models_dots)
     console.log(centeredItemIndex)
@@ -228,8 +238,6 @@ form.addEventListener('submit', async function(event){
     let datosJSON = JSON.stringify(datos);
 
 // DETERMINAR LA URL DEL SERVIDOR
-    // Usar la URL del servidor desplegado en Vercel
-    const serverURL = 'https://epacreativos.vercel.app/invitations';
 
     try {
 // ENVIO LA SOLICITUD USANDO AXIOS
