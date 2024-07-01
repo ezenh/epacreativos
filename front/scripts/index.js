@@ -17,9 +17,12 @@ let serverURL;
 console.log(window.location.hostname)
 //CHECKEA LA URL DEL PROYECTO => localhost o web
 if (window.location.hostname === 'localhost') {
-    serverURL = 'http://localhost:3000/invitations';
+    serverURL = 'http://localhost:3000/invitations/';
 } else {
-    serverURL = 'https://epacreativos.vercel.app/invitations';
+    serverURL = 'https://epacreativos.vercel.app/invitations/';
+    serverURL = 'http://localhost:3000/invitations/'
+    // serverURL = 'https://epacreativos.vercel.app:3000/invitations/'
+
 }
     
     console.log(serverURL)
