@@ -30,12 +30,12 @@ switch (window.location.hostname) {
         serverURL = 'http://localhost:3000/invitations/'
         break;
 
-    case 'https://epacreativos.vercel.app/':
-        serverURL = 'https://epacreativos.vercel.app'
+    case 'https://epacreativos.vercel.app':
+        serverURL = 'https://epacreativos.vercel.app/'
         break;
     
-    case 'https://epacreativos.netlify.app/':
-        serverURL = 'https://epacreativos.netlify.app'
+    case 'https://epacreativos.netlify.app':
+        serverURL = 'https://epacreativos.netlify.app/'
     }
 
 console.log('URL DE PRUEBA: ' +  serverURL)
