@@ -26,7 +26,7 @@ console.log(window.location.hostname)
 
 const serverURL = window.location.hostname === '127.0.0.1'
     ? 'http://localhost:3000/invitations/'
-    : 'https://epacreativos.vercel.app/invitations/';
+    : 'https://epacreativos.vercel.app/';
 
 console.log(serverURL)
 
