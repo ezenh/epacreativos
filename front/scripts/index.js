@@ -24,11 +24,21 @@ console.log(window.location.hostname)
 //     serverURL = 'http://localhost:3000/invitations/'
 // }
 
-const serverURL = window.location.hostname === '127.0.0.1'
-    ? 'http://localhost:3000/invitations/'
-    : 'https://epacreativos.vercel.app/';
+let serverURL
+switch (window.location.hostname) {
+    case '127.0.0.1':
+        serverURL = 'http://localhost:3000/invitations/'
+        break;
 
-console.log(serverURL)
+    case 'https://epacreativos.vercel.app/':
+        serverURL = 'https://epacreativos.vercel.app/'
+        break;
+    
+    case 'https://epacreativos.netlify.app/':
+        serverURL = 'https://epacreativos.netlify.app/'
+    }
+
+console.log('URL DE PRUEBA: ' +  serverURL)
 
 document.getElementById('models_animation_button').addEventListener('click', (event) => {
     let centeredItemIndex = checkSliderItemPos(models_cards_container, models_dots)
