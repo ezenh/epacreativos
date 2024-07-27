@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPA! Creativos</title>
+    <link rel="stylesheet" href="./styles/0reset.css">
+    <link rel="stylesheet" href="./styles/0style.css">
+    <link rel="stylesheet" href="./styles/bar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo_mb"><img src="./assets/logos/epa-logo-sm.png" alt=""></li>
+                <li id="first_mb"><a href="./index.html">Invitaciones</a></li>
+                <li><a href="./bar.html">Menú de Bar</a></li>
+                <li><a id="locallink" href="./webs.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2><img src="./assets/logos/epa-logo-smc.png" alt="">Website</h2>
+            <h3>Soñalo, Contruilo, Webealo...A tu gusto. </h3>
+            <img id="introduction_mockup" src="./assets/img/mup1.png" alt="">
+
+        </div>
+        <div class="introduction" id="firstP">
+            <div id="scroll_direction">
+                <img src="./assets/img/left_scroll.png" alt="">
+                <img src="./assets/img/up_scroll.png" alt="">
+            </div>
+            <p>El contenido del menú se personaliza con el logo, productos, precios y promociones del negocio<a href="#aclaration_1">1</a>.</p>
+        </div>
+
+        <div class="introduction" id="secondP">
+            <p>El contenido puede ser actualizado todas las veces que sea necesario<a href="#aclaration_2">2</a> para adaptarse a las actualizaciones de precios o promociones del local<a href="#aclaration_3">3</a>.</p>
+        </div>
+
+        <div class="introduction" id="thirdP">
+            <p>El costo de del menú parte desde los <b>USD 40,00</b> o el equivalente en ARS según la cotización del Dólar Blue del dia.</p>
+        </div>
+
+        <div class="introduction" id="fourthP">
+            <p>Puede acordarse un modelo <b>mensual</b> de mantenimiento o un modelo <b>on demand</b> para realizar el mantenimiento y actualización de la plataforma<a href="#aclaration_4">4</a>.</p>
+        </div>
+
+            <span id="aclaration_1"><b>1</b>La imágen de la interfaz de la carta para bares y restaurantes es a modo ilustrativo. El resultado final del diseño de la interfaz resulta de las necesidades del cliente o local.</span>
+            <span id="aclaration_2"><b>2</b>Toda personalización o adaptación no contemplada en la estructura modelo se cotiza como un extra.</span>
+            <span id="aclaration_3"><b>3</b>La estructura base contempla, en su precio base, el cambio de textos, colores e imágenes ilustrativas del producto y el negocio</span>
+            <span id="aclaration_4"><b>4</b>El modelo "mensual" se abona todos los meses e incluye las actualizaciones y mejoras de la plataforma al mismo tiempo que las modificaciones que se deseen realizar por variaciones de precios, promociones o de productos. La modalidad "on demand" incluye sólo el mantenimiento de la plataforma para su correcto funcionamiento y todas las modificaciones se cotizan individualmente.</span>
+
+            <button class="toForm_button" href="#form">Solicitar</button>
+        </section>
+
+        <section id="models">
+            <h2>Acceso</h2>
+            <h3>En el momento que se sienta tu cliente.</h3>
+            <div id="models_cards_container"></div>
+            <div id="models_names_container">
+                <p id="nameLeft"></p>
+                <p id="nameCenter"></p>
+                <p id="nameRight"></p>
+            </div>
+
+            <div id="models_dots"></div>
+            <button id="models_animation_button">Animar</button>
+        </section>
+
+        <section id="events">
+            <h2>Extras</h2>
+            <h3>Vayamos aún más allá. </h3>
+            <div id="events_cards_container"></div>
+        </section>
+
+
+
+        <section id="examples">
+            <h2>Ejemplo</h2>
+            <h3>Veamos cómo queda.</h3>
+            <div id="iframe_container">
+                <iframe id="example_iframe" src="" frameborder="0" title="existing invitations"></iframe>
+            </div>
+            <div id="examples_selector"></div>
+        </section>
+
+        <section id="contacto">
+            <h2>Manos a la obra!</h2>
+            <h3>Comunicate con nosotros</h3>
+
+            <p></p>
+
+            <a class="toForm_button" href="https://wa.me/5493816376266?text=Hola, me gustaría solicitar el servicio para mi sitio web">Solicitar</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="./assets/ico/epa_footer.png" alt="">
+        <p>Epa! Creativos Todos los derechos reservados</p>
+        <p>381-6376266</p>
+        <img src="./assets/ico/wpp.png" alt="">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/scrollFunctions.js"></script>
+    <!-- <script type="module" src="./scripts/bar.js"></script> -->
+</body>
+</html>
